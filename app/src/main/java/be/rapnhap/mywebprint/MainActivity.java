@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.buttonViewIntent :
                 Intent intent3 = new Intent(Intent.ACTION_VIEW);
+                // the data is needed in the other app !!
+                intent3.putExtra("KEY", "Key value to pass");
                 startActivity(intent3);
                 break;
             case R.id.buttonIntentPro :
